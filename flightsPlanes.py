@@ -1,6 +1,6 @@
 from IOgenerate import *
 
-sourceFlight = "data/routes2.dat"
+sourceFlight = "data/routes.dat"
 outputFlight = "sql/flight.sql"
 outputAirVehicle = "sql/airVehicle.sql"
 outputFliesOn = "sql/fliesOn.sql"
@@ -61,6 +61,9 @@ for route in routes:
 
     planesList = route[8].split(" ")
     for plane in planesList:
+        if not plane or plane == " ":
+            continue
+
         if plane not in planes:
             planes[plane] = airVehicleId
             airVehicleId += 1
@@ -72,7 +75,6 @@ for route in routes:
             "),")
         fliesOnId += 1
     flightId += 1
-
 
 for plane in planes:
     airVehicleSQL.append("(" +
