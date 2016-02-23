@@ -57,7 +57,7 @@ for route in routes:
         random_time() + ", " +                          # ArrivalTime
         random_(randint(2, 4), string.digits) + ", " +  # Distance
         random_time() +                                 # Duration
-        "), ")
+        "),")
 
     planesList = route[8].split(" ")
     for plane in planesList:
@@ -83,6 +83,11 @@ for plane in planes:
 print(outputFlight + " [" + str(len(flightSQL) - 1) + "]")
 print(outputFliesOn + " [" + str(len(fliesOnSQL) - 1) + "]")
 print(outputAirVehicle + " [" + str(len(airVehicleSQL) - 1) + "]")
+
+# Making sure I'm ending with ';' (semicolon)
+flightSQL[-1] = flightSQL[-1][:-1] + ";"
+fliesOnSQL[-1] = fliesOnSQL[-1][:-1] + ";"
+airVehicleSQL[-1] = airVehicleSQL[-1][:-1] + ";"
 
 write_contents(flightSQL, outputFlight)
 write_contents(fliesOnSQL, outputFliesOn)
