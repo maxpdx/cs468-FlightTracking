@@ -1,4 +1,5 @@
 from random import randint, SystemRandom, choice
+from datetime import date
 import string
 
 
@@ -53,6 +54,15 @@ def random_week_days(days=2):
     return result
 
 
+def random_date():
+    t = date.today()
+
+    y = t.year - randint(-2, 20)
+    m = randint(1, 12)
+    d = abs(t.day - randint(0, 28)) + 1
+    return str(t.replace(y, m, d))
+
+
 def random_time():
     first = random_(1, "012")
     if first != "2":
@@ -64,3 +74,7 @@ def random_time():
     fourth = random_(1, string.digits)
 
     return first + second + ":" + third + fourth
+
+
+def random_datetime():
+    return random_date() + random_time()
