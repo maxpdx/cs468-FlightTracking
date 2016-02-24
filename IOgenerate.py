@@ -45,7 +45,7 @@ def random_(length=4, sample=string.ascii_uppercase + string.digits):
 def random_week_days(days=2):
     result = ""
     sample = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"]
-    # for x in range(length):
+
     while len(result) < days * 2:
         r = choice(sample)
         sample.remove(r)
@@ -63,4 +63,4 @@ def random_time():
     third = random_(1, "012345")
     fourth = random_(1, string.digits)
 
-    return first + second+ ":" + third + fourth
+    return first + second + ":" + third + fourth
