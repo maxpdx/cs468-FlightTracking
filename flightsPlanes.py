@@ -33,25 +33,6 @@ planes = {}
 
 routes = get_contents(sourceFlight)
 
-# first row
-flightSQL.append(
-    "INSERT INTO Flight (FlightId, FlightNo, AirlineId, FromAirportId, " +
-    "ToAirportId, NumOfStops, WeekDays, DepartureTime, ArrivalTime, " +
-    "Distance, Duration) VALUES")
-airVehicleSQL.append(
-    "INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES"
-)
-fliesOnSQL.append(
-    "INSERT INTO FliesOn(FlightAirVehicleId, FlightId, PlaneId) VALUES"
-)
-statusSQL.append(
-    "INSERT INTO Status(StatusId, description) VALUES"
-)
-flightStatusSQL.append(
-    "INSERT INTO FlightStatus (FlightStatusId, FlightId, StatusId, " +
-    "OptionalNote, DepartureDateTime, ArrivingDateTime, InsertTime) VALUES"
-)
-
 for route in routes:
 
     # Skipping some routes that have \N in their rows.
@@ -69,7 +50,10 @@ for route in routes:
 
     flightNOs[flightNO] = flightNO
 
-    flightSQL.append("(" +
+    flightSQL.append(
+        "INSERT INTO Flight (FlightId, FlightNo, AirlineId, " +
+        "FromAirportId, ToAirportId, NumOfStops, WeekDays, " +
+        "DepartureTime, ArrivalTime, Distance, Duration) VALUES (" +
         str(flightId) + ", " +                          # FlightId
         "'" + flightNO + "'" + ", " +                   # FlightNo
         route[1] + ", " +                               # AirlineId
@@ -81,7 +65,7 @@ for route in routes:
         "'" + random_time() + "'" + ", " +              # ArrivalTime
         random_(randint(2, 4), string.digits) + ", " +  # Distance
         "'" + random_time() + "'" +                     # Duration
-        "),")
+        ");")
 
     planesList = route[8].split(" ")
     for plane in planesList:
@@ -92,11 +76,13 @@ for route in routes:
             planes[plane] = airVehicleId
             airVehicleId += 1
 
-        fliesOnSQL.append("(" +
+        fliesOnSQL.append(
+            "INSERT INTO FliesOn(FlightAirVehicleId, FlightId, PlaneId) " +
+            "VALUES (" +
             str(fliesOnId) + ", " +
             str(flightId) + ", " +
             str(planes[plane]) +
-            "),")
+            ");")
         fliesOnId += 1
 
     # Making sure we don't generate statuses for every flight
@@ -108,7 +94,10 @@ for route in routes:
         rep = 0
     i = 0
     while i < rep:
-        flightStatusSQL.append("(" +
+        flightStatusSQL.append(
+            "INSERT INTO FlightStatus (FlightStatusId, FlightId, StatusId, " +
+            "OptionalNote, DepartureDateTime, ArrivingDateTime, InsertTime) " +
+            "VALUES (" +
             str(flightStatusId) + ", " +                # FlightStatusId
             str(flightId) + ", " +                      # FlightId
             str(randint(0, len(statuses))) + ", " +     # StatusId
@@ -116,7 +105,7 @@ for route in routes:
             "'" + random_datetime() + "'" + ", " +      # DepartureDateTime
             "'" + random_datetime() + "'" + ", " +      # ArrivingDateTime
             "'" + random_time() + "'" +                 # InsertTime
-            "),")
+            ");")
 
         flightStatusId += 1
         i += 1
@@ -124,30 +113,24 @@ for route in routes:
     flightId += 1
 
 for plane in planes:
-    airVehicleSQL.append("(" +
+    airVehicleSQL.append(
+        "INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (" +
         str(planes[plane]) + ", " +
         "'" + plane + "'" +
-        "),")
+        ");")
 
 for status in statuses:
-    statusSQL.append("(" +
+    statusSQL.append("INSERT INTO Status(StatusId, description) VALUES (" +
         str(statusId) + ", " +
         "'" + status + "'" +
-        "),")
+        ");")
     statusId += 1
 
-print(outputFlight + " [" + str(len(flightSQL) - 1) + "]")
-print(outputFliesOn + " [" + str(len(fliesOnSQL) - 1) + "]")
-print(outputAirVehicle + " [" + str(len(airVehicleSQL) - 1) + "]")
-print(outputStatus + " [" + str(len(statusSQL) - 1) + "]")
-print(outputFlightStatus + " [" + str(len(flightStatusSQL) - 1) + "]")
-
-# Making sure I'm ending with ';' (semicolon)
-flightSQL[-1] = flightSQL[-1][:-1] + ";"
-fliesOnSQL[-1] = fliesOnSQL[-1][:-1] + ";"
-airVehicleSQL[-1] = airVehicleSQL[-1][:-1] + ";"
-statusSQL[-1] = statusSQL[-1][:-1] + ";"
-flightStatusSQL[-1] = flightStatusSQL[-1][:-1] + ";"
+print(outputFlight + " [" + str(len(flightSQL)) + "]")
+print(outputFliesOn + " [" + str(len(fliesOnSQL)) + "]")
+print(outputAirVehicle + " [" + str(len(airVehicleSQL)) + "]")
+print(outputStatus + " [" + str(len(statusSQL)) + "]")
+print(outputFlightStatus + " [" + str(len(flightStatusSQL)) + "]")
 
 write_contents(flightSQL, outputFlight)
 write_contents(fliesOnSQL, outputFliesOn)

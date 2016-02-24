@@ -1,168 +1,167 @@
-INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES
-(125, '342'),
-(38, '763'),
-(26, 'SU9'),
-(39, 'CNA'),
-(145, 'I14'),
-(136, 'M11'),
-(100, '717'),
-(106, '764'),
-(99, '343'),
-(141, 'J41'),
-(121, 'DC9'),
-(92, 'EMB'),
-(153, 'M1F'),
-(91, '73C'),
-(44, 'BE1'),
-(154, 'DHL'),
-(134, 'AB6'),
-(151, 'CN1'),
-(160, '73R'),
-(50, 'PAG'),
-(166, '32C'),
-(37, '777'),
-(112, '73J'),
-(49, 'E90'),
-(119, '310'),
-(110, '74H'),
-(167, 'SFB'),
-(57, 'EM2'),
-(30, 'DHT'),
-(95, 'ERJ'),
-(109, '32S'),
-(6, '143'),
-(61, '332'),
-(58, 'PA2'),
-(111, 'EMJ'),
-(46, 'BEH'),
-(52, 'M83'),
-(156, 'J32'),
-(73, 'CR7'),
-(97, 'E95'),
-(77, 'E75'),
-(114, 'AR1'),
-(126, 'ARJ'),
-(81, '787'),
-(83, '773'),
-(11, '319'),
-(45, 'FRJ'),
-(22, 'CNC'),
-(9, 'E70'),
-(104, '76W'),
-(120, 'F28'),
-(96, '77L'),
-(82, '380'),
-(138, 'BH2'),
-(63, 'L4T'),
-(47, '738'),
-(124, '74N'),
-(13, '100'),
-(28, '73G'),
-(36, '313'),
-(53, 'F50'),
-(51, 'CNT'),
-(72, 'SWM'),
-(133, '74M'),
-(17, 'BNI'),
-(70, '772'),
-(115, '75W'),
-(162, 'D93'),
-(35, 'DH8'),
-(164, 'PL2'),
-(116, 'J31'),
-(131, 'T20'),
-(90, 'AR8'),
-(149, 'S76'),
-(117, '747'),
-(107, '753'),
-(101, 'M88'),
-(75, 'ERD'),
-(1, 'CR2'),
-(67, '739'),
-(108, '388'),
-(5, '141'),
-(76, 'M80'),
-(48, 'TU3'),
-(23, 'DHP'),
-(55, '752'),
-(135, '732'),
-(31, '321'),
-(105, '74Y'),
-(98, '788'),
-(3, 'AN4'),
-(12, '320'),
-(150, 'BE9'),
-(161, '73N'),
-(158, '76F'),
-(122, '74E'),
-(19, '330'),
-(102, 'F70'),
-(103, 'M90'),
-(32, 'YK2'),
-(66, '73H'),
-(86, '318'),
-(129, 'ER3'),
-(16, 'ATR'),
-(128, 'YN7'),
-(56, 'D28'),
-(7, '146'),
-(165, '33X'),
-(140, 'DH7'),
-(123, 'D38'),
-(159, 'CN2'),
-(21, 'AT7'),
-(157, 'YN2'),
-(148, 'PA1'),
-(64, 'ER4'),
-(74, 'CRK'),
-(155, 'A40'),
-(54, 'MA6'),
-(144, 'CNJ'),
-(25, 'SH6'),
-(2, 'A81'),
-(132, 'A58'),
-(147, '74L'),
-(10, 'M87'),
-(88, '345'),
-(142, 'BNT'),
-(27, '734'),
-(87, '346'),
-(71, '736'),
-(29, 'AT5'),
-(130, 'IL9'),
-(41, '73M'),
-(65, '73W'),
-(78, '744'),
-(40, '735'),
-(20, 'DH3'),
-(85, '762'),
-(152, 'DH2'),
-(69, '77W'),
-(163, '77X'),
-(84, '32B'),
-(62, 'CR9'),
-(89, '32A'),
-(127, 'D1C'),
-(18, 'DH4'),
-(33, 'TU5'),
-(143, 'BEC'),
-(118, 'S20'),
-(24, '737'),
-(137, '75T'),
-(113, '73Q'),
-(139, 'NDE'),
-(80, '757'),
-(79, '340'),
-(42, 'AT4'),
-(60, '767'),
-(94, 'DH1'),
-(68, '333'),
-(14, 'ATP'),
-(4, '142'),
-(93, 'CRA'),
-(146, 'AB4'),
-(43, '733'),
-(8, 'CRJ'),
-(34, 'YK4'),
-(15, 'SF3'),
-(59, 'M82');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (82, '380');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (94, 'DH1');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (93, 'CRA');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (122, '74E');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (47, '738');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (81, '787');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (41, '73M');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (106, '764');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (131, 'T20');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (85, '762');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (22, 'CNC');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (18, 'DH4');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (6, '143');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (152, 'DH2');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (34, 'YK4');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (59, 'M82');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (54, 'MA6');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (46, 'BEH');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (68, '333');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (100, '717');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (159, 'CN2');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (88, '345');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (127, 'D1C');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (74, 'CRK');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (120, 'F28');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (113, '73Q');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (162, 'D93');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (7, '146');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (69, '77W');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (115, '75W');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (76, 'M80');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (109, '32S');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (70, '772');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (119, '310');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (35, 'DH8');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (121, 'DC9');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (61, '332');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (164, 'PL2');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (77, 'E75');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (14, 'ATP');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (9, 'E70');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (157, 'YN2');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (105, '74Y');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (19, '330');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (155, 'A40');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (50, 'PAG');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (133, '74M');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (117, '747');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (49, 'E90');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (136, 'M11');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (32, 'YK2');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (118, 'S20');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (60, '767');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (45, 'FRJ');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (104, '76W');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (31, '321');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (116, 'J31');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (97, 'E95');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (86, '318');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (72, 'SWM');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (27, '734');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (40, '735');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (55, '752');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (2, 'A81');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (8, 'CRJ');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (23, 'DHP');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (111, 'EMJ');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (95, 'ERJ');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (83, '773');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (123, 'D38');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (37, '777');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (150, 'BE9');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (107, '753');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (58, 'PA2');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (165, '33X');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (1, 'CR2');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (124, '74N');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (16, 'ATR');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (101, 'M88');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (17, 'BNI');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (84, '32B');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (13, '100');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (108, '388');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (160, '73R');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (52, 'M83');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (15, 'SF3');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (42, 'AT4');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (143, 'BEC');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (92, 'EMB');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (36, '313');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (149, 'S76');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (154, 'DHL');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (132, 'A58');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (10, 'M87');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (20, 'DH3');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (39, 'CNA');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (163, '77X');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (144, 'CNJ');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (99, '343');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (146, 'AB4');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (138, 'BH2');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (142, 'BNT');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (148, 'PA1');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (51, 'CNT');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (114, 'AR1');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (147, '74L');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (156, 'J32');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (139, 'NDE');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (48, 'TU3');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (90, 'AR8');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (53, 'F50');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (57, 'EM2');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (21, 'AT7');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (135, '732');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (129, 'ER3');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (153, 'M1F');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (65, '73W');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (80, '757');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (71, '736');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (141, 'J41');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (126, 'ARJ');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (166, '32C');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (125, '342');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (78, '744');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (145, 'I14');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (28, '73G');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (12, '320');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (137, '75T');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (38, '763');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (79, '340');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (63, 'L4T');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (112, '73J');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (44, 'BE1');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (158, '76F');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (11, '319');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (30, 'DHT');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (25, 'SH6');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (134, 'AB6');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (66, '73H');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (103, 'M90');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (64, 'ER4');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (5, '141');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (91, '73C');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (67, '739');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (102, 'F70');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (56, 'D28');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (29, 'AT5');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (161, '73N');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (167, 'SFB');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (130, 'IL9');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (43, '733');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (24, '737');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (151, 'CN1');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (110, '74H');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (75, 'ERD');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (26, 'SU9');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (3, 'AN4');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (33, 'TU5');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (4, '142');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (62, 'CR9');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (140, 'DH7');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (98, '788');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (73, 'CR7');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (128, 'YN7');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (96, '77L');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (87, '346');
+INSERT INTO AirVehicle (PlaneId, TypeNum) VALUES (89, '32A');
