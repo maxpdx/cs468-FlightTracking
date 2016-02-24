@@ -1,4 +1,4 @@
-from random import randint, SystemRandom, choice
+from random import randint, SystemRandom, choice, normalvariate, expovariate
 from datetime import date
 import string
 

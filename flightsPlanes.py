@@ -7,7 +7,8 @@ outputFliesOn = "sql/fliesOn.sql"
 outputStatus = "sql/status.sql"
 outputFlightStatus = "sql/flightStatus.sql"
 
-flightId = 1    # Start value and increment from there
+# Start values for IDs
+flightId = 1
 airVehicleId = 1
 fliesOnId = 1
 statusId = 1
@@ -76,10 +77,10 @@ for route in routes:
         route[5] + ", " +                               # ToAirportId
         route[7] + ", " +                               # NumOfStops
         "'" + random_week_days(randint(1, 4)) + "', " + # WeekDays
-        random_time() + ", " +                          # DepartureTime
-        random_time() + ", " +                          # ArrivalTime
+        "'" + random_time() + "'" + ", " +              # DepartureTime
+        "'" + random_time() + "'" + ", " +              # ArrivalTime
         random_(randint(2, 4), string.digits) + ", " +  # Distance
-        random_time() +                                 # Duration
+        "'" + random_time() + "'" +                     # Duration
         "),")
 
     planesList = route[8].split(" ")
@@ -97,6 +98,29 @@ for route in routes:
             str(planes[plane]) +
             "),")
         fliesOnId += 1
+
+    # Making sure we don't generate statuses for every flight
+    # rep = randint(0, 2)
+    # rep = round(normalvariate(-1, 4))
+    # rep = round(expovariate(7)*10)
+    rep = round(normalvariate(-3, 4))
+    if rep < 0:
+        rep = 0
+    i = 0
+    while i < rep:
+        flightStatusSQL.append("(" +
+            str(flightStatusId) + ", " +                # FlightStatusId
+            str(flightId) + ", " +                      # FlightId
+            str(randint(0, len(statuses))) + ", " +     # StatusId
+            "''" + ", " +                               # OptionalNote
+            "'" + random_datetime() + "'" + ", " +      # DepartureDateTime
+            "'" + random_datetime() + "'" + ", " +      # ArrivingDateTime
+            "'" + random_time() + "'" +                 # InsertTime
+            "),")
+
+        flightStatusId += 1
+        i += 1
+
     flightId += 1
 
 for plane in planes:
