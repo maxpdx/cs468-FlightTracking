@@ -18,47 +18,61 @@ countrySQL = []
 airports = get_contents(sourceAirports)
 airlines = get_contents(sourceAirlines)
 
-countries = {}
+countries = {"UNKNOWN": 0}
+
+
+def insert_country(c="", c_id=countryId, c_list=countries):
+    c = c.strip()
+    if not c:
+        c = "UNKNOWN"
+
+    if c not in c_list:
+        c_list[c] = c_id
+        c_id += 1
+
+    return c_id, c, c_list
+
 
 for airport in airports:
     country = airport[3]
-    if country and country != " " and country not in countries:
-        countries[country] = countryId
-        countryId += 1
+    countryId, country, countries = insert_country(country, countryId,
+                                                   countries)
 
     airportSQL.append(
-        "INSERT INTO Airports (AirportId, Name, City, CountryId, Alias, "
+        "INSERT INTO Airport ("
+        "AirportId, AirportName, City, CountryId, Alias, "
         "Latitude, Longitude, Altitude, TimeZone) VALUES (" +
-        airport[0] + "," +          # AirportId
-        airport[1] + "," +          # Name
-        airport[2] + "," +          # City
-        str(countries[country]) + "," +  # CountryId
-        airport[4] + "," +          # Alias
-        airport[5] + "," +          # Latitude
-        airport[6] + "," +          # Longitude
-        airport[7] + "," +          # Altitude
-        airport[8] +                # TimeZone
+        airport[0] + "," +                  # AirportId
+        "'" + airport[1] + "'" + "," +      # Name
+        "'" + airport[2] + "'" + "," +      # City
+        str(countries[country]) + "," +     # CountryId
+        "'" + airport[4] + "'" + "," +      # Alias
+        airport[6] + "," +          # Latitude
+        airport[7] + "," +          # Longitude
+        airport[8] + "," +          # Altitude
+        str(airport[9]) +           # TimeZone
         ");")
 
 for airline in airlines:
     country = airline[6]
-    if country and country != " " and country not in countries:
-        countries[country] = countryId
-        countryId += 1
+    countryId, country, countries = insert_country(country, countryId,
+                                                   countries)
 
     airlineSQL.append(
-        "INSERT INTO Airline (AirlineId, Name, Alias, CountryId) VALUES (" +
+        "INSERT INTO Airline ("
+        "AirlineId, AirlineName, Alias, CountryId) VALUES (" +
         airline[0] + "," +          # AirlineId
-        airline[1] + "," +          # Name
-        airline[2] + "," +          # Alias
+        "'" + airline[1] + "'," +   # Name
+        "'" + airline[2] + "'," +   # Alias
         str(countries[country]) +   # CountryId
         ");")
 
 for country in countries:
     countrySQL.append(
-        "INSERT INTO Country (CountryId, Name) VALUES (" +
+        "INSERT INTO Country ("
+        "CountryId, CountryName) VALUES (" +
         str(countries[country]) + ", " +
-        country +
+        "'" + country + "'" +
         ");")
 
 

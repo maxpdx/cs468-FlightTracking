@@ -40,13 +40,14 @@ for route in routes:
     for el in route:
         if el == "\\N":
             skip = True
-    if skip:
+    # Ignoring empty AirlineId, FromAirportId, ToAirportId or other '\N's
+    if skip or not route[3] or not route[5] or not route[1]:
         continue
 
     # Making sure there are no duplicates in flight numbers
     flightNO = ""
     while flightNO == "" or flightNO in flightNOs:
-        flightNO = route[0] + "-" + random_(randint(3, 5), string.digits)
+        flightNO = random_(randint(3, 5), string.digits)
 
     flightNOs[flightNO] = flightNO
 
@@ -100,7 +101,7 @@ for route in routes:
             "VALUES (" +
             str(flightStatusId) + ", " +                # FlightStatusId
             str(flightId) + ", " +                      # FlightId
-            str(randint(0, len(statuses))) + ", " +     # StatusId
+            str(randint(1, len(statuses))) + ", " +     # StatusId
             "''" + ", " +                               # OptionalNote
             "'" + random_datetime() + "'" + ", " +      # DepartureDateTime
             "'" + random_datetime() + "'" + ", " +      # ArrivingDateTime
@@ -120,7 +121,7 @@ for plane in planes:
         ");")
 
 for status in statuses:
-    statusSQL.append("INSERT INTO Status(StatusId, description) VALUES (" +
+    statusSQL.append("INSERT INTO Status(StatusId, StatusName) VALUES (" +
         str(statusId) + ", " +
         "'" + status + "'" +
         ");")
