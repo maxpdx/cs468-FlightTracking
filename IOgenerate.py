@@ -1,34 +1,35 @@
 from random import randint, SystemRandom, choice, normalvariate, expovariate
 from datetime import date
 import string
+import csv
 
 
 def get_contents(file_path="input.dat"):
     rows = []
-    f = open(file_path, "r")
-    with f as file:
-        for line in file:
-            if line.startswith("#"):
-                continue
-            rows.append(parse(line))
+    f = open(file_path, "r", encoding='utf8')
+
+    for line in csv.reader(f, delimiter=','):
+        row = []
+        for element in line:
+            element = element.replace("\'", "''")
+            element = element.replace("%", "")
+
+            if element == "\\N" or element == " ":
+                element = ""
+
+            row.append(element)
+        rows.append(row)
     f.close()
     return rows
 
 
 def write_contents(lists=[], file_path="output.dat"):
-    f = open(file_path, "w+")
+    f = open(file_path, "w+", encoding='utf8')
 
     for line in lists:
         f.write(str(line) + "\n")
 
     f.close()
-
-
-def parse(line):
-    line = line.replace("\r", "")
-    line = line.replace("\n", "")
-    line = line.split(",")
-    return line
 
 
 def random_(length=4, sample=string.ascii_uppercase + string.digits):
@@ -77,4 +78,4 @@ def random_time():
 
 
 def random_datetime():
-    return random_date() + random_time()
+    return random_date() + " " + random_time()
