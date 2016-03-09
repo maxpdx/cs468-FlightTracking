@@ -1,0 +1,2 @@
+"flightid","flightno","airlineid","fromairportid","toairportid","numofstops","weekdays","departuretime","arrivaltime","distance","duration","flightstatusid","statusid","optionalnote","departuredatetime","arrivingdatetime","inserttime"
+"64326","32958","2681","3998","346","0","SuTuFr","20:19:00","20:16:00","639","03:44:00","34083","1","","2003-02-07 20:05:00","2016-03-08 01:14:00","20:35:00"

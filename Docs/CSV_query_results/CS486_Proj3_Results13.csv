@@ -1,0 +1,4 @@
+"airlineid","flightid","flightno","fromairportid","toairportid","numofstops","weekdays","departuretime","arrivaltime","distance","duration","flightstatusid","statusid","optionalnote","departuredatetime","arrivingdatetime","inserttime","airlinename","alias","countryid"
+"5209","54893","44086","7073","3751","0","SuFrTh","14:29:00","17:26:00","9893","13:25:00","29058","1","","2016-03-10 23:38:00","1996-07-17 15:21:00","20:54:00","United Airlines","","16"
+"5209","55696","63604","3491","5761","0","SuWe","23:59:00","21:34:00","473","14:14:00","29508","5","","2016-03-10 17:47:00","2006-03-19 17:09:00","00:54:00","United Airlines","","16"
+"5209","55761","85284","3714","6958","0","FrTh","06:25:00","03:41:00","53","09:35:00","29535","7","","2016-03-13 00:20:00","2000-01-05 03:26:00","21:52:00","United Airlines","","16"
