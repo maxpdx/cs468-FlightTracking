@@ -1,3 +1,3 @@
-"flightid","flightno","airlineid","fromairportid","toairportid","numofstops","weekdays","departuretime","arrivaltime","distance","duration","airportid","airportname","city","countryid","alias","latitude","longitude","altitude","timezone","airportid","airportname","city","countryid","alias","latitude","longitude","altitude","timezone"
-"21136","7682","2009","3720","580","0","ThFrWe","11:48:00","16:06:00","26","16:38:00","580","Schiphol","Amsterdam","24","AMS","52.308613","4.763889","-11","1","3720","Portland Intl","Portland","16","PDX","45.588722","-122.5975","30","-8"
-"36240","97694","3090","3720","580","0","Mo","20:20:00","14:36:00","39","20:04:00","580","Schiphol","Amsterdam","24","AMS","52.308613","4.763889","-11","1","3720","Portland Intl","Portland","16","PDX","45.588722","-122.5975","30","-8"
+"distance"
+"26"
+"39"
