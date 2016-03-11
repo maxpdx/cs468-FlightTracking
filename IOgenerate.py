@@ -2,16 +2,6 @@ from random import randint, SystemRandom, choice, normalvariate, expovariate
 from datetime import date
 import string
 import csv
-import pg8000
-
-
-def db_connect():
-    return pg8000.connect(
-        host="dbclass.cs.pdx.edu",
-        user="username",
-        password="password",
-        database="database"
-    )
 
 
 def get_contents(file_path="input.dat"):
